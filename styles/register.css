@@ -1,0 +1,120 @@
+:root {
+    --background-dark: #212526;
+    --background-light: #FFFFFF;
+    --text-white: #FFFFFF;
+    --text-dark: #212526;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'KoHo', sans-serif;
+  }
+
+  /* MAIN BODY */
+
+  .background-register{
+    background-image: url("/register/image_register/jievani-weerasinghe-NHRM1u4GD_A-unsplash.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px var(--background-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-field{
+    background-color: var(--background-light);
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px var(--background-dark);
+    height:80%;
+    width:40%;
+    display: grid;
+    grid-template: auto / 50% 50%;
+    grid-template-areas: 
+    'header .'
+    'account account'
+    'pw pw'
+    'terms terms'
+    'btn btn';
+  }
+
+  .register-header{
+    grid-area: header;
+    font-weight: 200;
+    margin: 20px;
+    color: car(--text-dark);
+  }
+
+  .account{
+    grid-area: account;
+  }
+
+  .password{
+    grid-area: pw;
+  }
+
+  .account, .password{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+  }
+
+  .id, .pw{
+    font-weight: 200;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+  }
+
+  #id, #pw{
+    border: none;
+    background-color: var(--background-dark);
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--text-white);
+  }
+
+  #id::placeholder, #pw::placeholder{
+    font-weight: 200;
+    color: var(--text-white);
+    font-size: 16px;
+  }
+
+  .terms{
+    grid-area: terms;
+    margin: 0px 20px;
+  }
+
+  .cb-terms{
+    font-weight: 200;
+    color: var(--text-dark);
+    margin-left: 8px;
+  }
+
+  .buttons{
+    grid-area: btn;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 20px 20px 20px;
+  }
+
+  .submit-btn, .reset-btn{
+    font-size: 16px;
+    color: var(--text-white);
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    border: none;
+    height:38px;
+    width:96px;
+  }
