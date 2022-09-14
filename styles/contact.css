@@ -1,0 +1,79 @@
+:root {
+    --background-dark: #212526;
+    --background-light: #FFFFFF;
+    --text-white: #FFFFFF;
+    --text-dark: #212526;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'KoHo', sans-serif;
+  }
+
+
+  /* MAIN BODY */
+
+  .background-contact{
+    background-image: url("/contact/images/kanchanara-9pCV2MB65y8-unsplash.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px var(--background-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-field{
+    background-color: var(--background-light);
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px var(--background-dark);
+    height:40%;
+    width:40%;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+    grid-template-areas: 
+    'header image'
+    'details image';
+  }
+
+  .contact-header{
+    grid-area: header;
+    font-weight: 200;
+    margin: 20px;
+    color: car(--text-dark);
+  }
+
+  .contact-details{
+    grid-area: details;
+    margin-left: 16px;
+  }
+
+  .company-name{
+    color: var(--text-dark);
+    font-weight: 200;
+    margin-bottom: 8px;
+  }
+
+  .mail{
+    color: var(--text-dark);
+    font-weight: 200;
+  }
+
+  .btc{
+    grid-area: image;
+    height: 90%;
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+  }
